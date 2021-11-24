@@ -1,0 +1,16 @@
+log/*
+logs/*
+out/*
+*.tar.gz
+*.csv
+*.pyc
+*.jpg
+table*.txt
+*.pickle
+figures/*
+recording/*
+*.png
+*.pickle
+configs
+data
+Replica-Dataset
