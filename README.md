@@ -3,7 +3,7 @@
 ---
 
 Implementation of **Change-Based Exploration Transfer (C-BET)**, as presented
-in [Interesting Object, Curious Agent: Learning Task-Agnostic Exploration](xxx) (arxiv link coming soon).
+in [Interesting Object, Curious Agent: Learning Task-Agnostic Exploration](https://arxiv.org/abs/2111.13119).
 
 This code was built on the [RIDE repository](https://github.com/facebookresearch/impact-driven-exploration).
 
