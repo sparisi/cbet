@@ -28,6 +28,8 @@ import src.models as models
 from src.env_utils import make_gym_env
 from src.utils import get_batch, log, create_buffers
 
+mp.set_sharing_strategy('file_system')
+
 PolicyNet = models.PolicyNet
 StateEmbeddingNet = models.StateEmbeddingNet
 ForwardDynamicsNet = models.ForwardDynamicsNet

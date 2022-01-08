@@ -7,8 +7,6 @@ from src.algos.rnd import train as train_rnd
 from src.algos.cbet import train as train_cbet
 from src.algos.ride import train as train_ride
 
-import torch.multiprocessing
-torch.multiprocessing.set_sharing_strategy('file_system')
 
 def main(flags):
     if flags.model == 'vanilla':
