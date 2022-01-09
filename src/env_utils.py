@@ -443,6 +443,7 @@ class EnvironmentHabitat:
             self.episode_return = torch.zeros(1, 1)
             self.episode_step = torch.zeros(1, 1, dtype=torch.int32)
 
+            os.makedirs(pathlib.Path(self.namefile).parent.absolute(), exist_ok=True)
             with open(self.namefile, 'wb') as handle:
                 pickle.dump(self.true_state_count, handle, protocol=pickle.HIGHEST_PROTOCOL)
 

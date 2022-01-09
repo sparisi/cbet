@@ -121,7 +121,7 @@ def run(flags):
     namefile = 'test__' + flags.algs + \
             '__' + flags.logdir.split(os.sep)[-3] + '-' + flags.logdir.split(os.sep)[-2] + \
             '__from_' + short_env_string(flags.from_env) + \
-            '__to_' + short_env_string(flags.to_env) + '_' + str(flags.count_reset_prob)
+            '__to_' + short_env_string(flags.to_env)
 
     print('... running: ' + namefile)
 
