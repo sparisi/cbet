@@ -38,7 +38,7 @@ cd Replica-Dataset
 `OMP_NUM_THREADS=1 python main.py --model cbet --env <ENV_NAME> --no_reward --intrinsic_reward_coef=0.005`
 
 * Extrinsic-only transfer with pre-trained model:
-`OMP_NUM_THREADS=1 python main.py --model cbet --env <ENV_NAME> --intrinsic_reward_coef=0.0 --checkpoint=path/to/model.tar`
+`OMP_NUM_THREADS=1 python main.py --model cbet --env <ENV_NAME> --intrinsic_reward_coef=0.0 --checkpoint=path/to/model.tar`  
 Pre-trained exploration policies are available as [code release](https://github.com/sparisi/cbet/releases/tag/v1).
 
 * Tabula-rasa training with summed intrinsic and extrinsic reward:
