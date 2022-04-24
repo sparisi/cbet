@@ -49,3 +49,7 @@ See `src/arguments.py` for the full list of hyperparameters.
 For MiniGrid, `<ENV_NAME>` can be `MiniGrid-DoorKey-8x8-v0`, `MiniGrid-Unlock-v0`, ...
 <br/>
 For Habitat, `<ENV_NAME>` can be `HabitatNav-apartment_0`, `HabitatNav-hotel_0`, ...
+
+* Offline testing (single): `python test_checkpoint.py --checkpoint=<PATH_TO_TAR>`
+
+* Offline testing (batch): `python test_models.py --logdir=<PATH_TO_LOG>` (this tests all models in a log directory produced by a Slurm batch run).
