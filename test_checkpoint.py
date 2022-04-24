@@ -130,6 +130,15 @@ def run(flags):
             stats.update({(env_id, seed): (test_model(model, keys, flags))})
 
 
+    for env_id in envs:
+        recap = {k : 0 for k in keys}
+        for seed in range(1, flags.n_seeds + 1):
+            for k in keys:
+                recap[k] += np.mean(stats[(env_id, seed)][k]) / flags.n_seeds
+        print(env_id, recap)
+        print()
+
+
 
 if __name__ == '__main__':
     flags = parser.parse_args()
